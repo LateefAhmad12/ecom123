@@ -28,7 +28,7 @@ const LoadedCartData = () => {
         <h3>Shopping Cart</h3>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-x-5 px-5">
           <div className="basis-3/4">
-            {cartItems.map((elm) => (
+            {cartItems.map((elm: any) => (
               <CartItemCard key={elm._id} cartItem={elm} />
             ))}
           </div>
