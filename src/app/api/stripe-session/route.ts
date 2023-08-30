@@ -17,8 +17,8 @@ export async function POST(request: NextRequest) {
         payment_method_types: ["card"],
         billing_address_collection: "auto",
         shipping_options: [
-          { shipping_rate: "shr_1NNQEiCWhuWDHCyLI3ZEbn2T" },
-          { shipping_rate: "shr_1NNQdtCWhuWDHCyLVxFex7Oe" },
+          { shipping_rate: "shr_1Nklr7B1CclmBEavI5djbYIT" },
+          { shipping_rate: "shr_1NhVecB1CclmBEavXLyoL3Pf" },
         ],
         invoice_creation: {
           enabled: true,
