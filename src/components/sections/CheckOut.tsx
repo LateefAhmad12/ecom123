@@ -3,14 +3,14 @@
 import { Product } from "@/interfaces";
 import getStipePromise from "@/lib/stripe";
 
-interface Props {
+interface IProps {
   products: Product[];
 }
 
-const StripeCheckOutButton = (props: Props) => {
+const StripeCheckOutButton = (props: IProps) => {
   const handleCheckout = async () => {
     const stripe = await getStipePromise();
-    const response = await fetch("/api/stripe-session/", {
+    const response = await fetch("/api/stripe-session", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       cache: "no-cache",
